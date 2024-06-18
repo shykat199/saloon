@@ -139,6 +139,7 @@
 <script src="{{asset('admin/assets/datatables/dataTables.bootstrap.js')}}"></script>
 
 <script src="{{asset('admin/js/sweetalert2.js')}}"></script>
+<script src="{{asset('admin/js/chart.js')}}"></script>
 
 <script type="text/javascript">
     /* ==============================================
