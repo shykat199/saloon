@@ -2,7 +2,19 @@
 @section('title','Dashboard')
 @section('admin.content')
     <!-- Start Widget -->
-
+<style>
+    .mini-stat-info-details {
+        flex: 1; /* This will make both divs take equal space */
+        text-align: center; /* Center the text */
+    }
+    .mini-stat-info-details span {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        color: #555;
+    }
+    }
+</style>
     <div class="row">
         <div class="col-md-6 col-sm-6 col-lg-3">
             <div class="mini-stat clearfix bx-shadow">
@@ -11,6 +23,17 @@
                     <span class="counter">{{getTotalSales()}}</span>
                     Total Sales
                 </div>
+                <div class="row" style="display: flex; justify-content: space-between;margin-top: 15px;">
+                    <div class="mini-stat-info-details text-muted">
+                        <span class="counter">{{$totalDue->total}}</span>
+                        Total Due
+                    </div>
+                    <div class="mini-stat-info-details text-muted">
+                        <span class="counter">{{$totalPaid->total}}</span>
+                        Total Paid
+                    </div>
+                </div>
+
                 <div class="tiles-progress">
                     <div class="m-t-20">
                         <h5 class="text-uppercase">Sales</h5>

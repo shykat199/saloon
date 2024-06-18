@@ -13,6 +13,6 @@ class Auth extends Middleware
 
     protected function redirectTo(Request $request)
     {
-        return $request->expectsJson() ? null :route('login');
+        return $request->expectsJson() ? null :route('admin.auth.login');
     }
 }

@@ -17,9 +17,11 @@ class DashboardController extends Controller
             ->orderByRaw('MIN(created_at)')
             ->get();
 
-        $labels = $salesData->pluck('month')->toArray();
-        $data = $salesData->pluck('total')->toArray();
+        $data['totalDue'] = VisitorService::selectRaw('SUM(due_amt) as total')->first();
+        $data['totalPaid'] = VisitorService::selectRaw('SUM(paid_amt) as total')->first();
+        $data['labels'] = $salesData->pluck('month')->toArray();
+        $data['data'] = $salesData->pluck('total')->toArray();
 
-        return view('admin.dashboard.dashboard',compact('labels', 'data'));
+        return view('admin.dashboard.dashboard',$data);
     }
 }
