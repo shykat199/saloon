@@ -123,7 +123,7 @@
 
 @endsection
 @push('custom.js')
-    <script type="text/javascript">
+    <script>
 
         $(document).ready(function () {
             $('#datatable').dataTable({

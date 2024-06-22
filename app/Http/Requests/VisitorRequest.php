@@ -26,6 +26,8 @@ class VisitorRequest extends FormRequest
             'location'=>'required',
             'source'=>'required',
             'status'=>'required',
+            'paidAmt'=>'required',
+            'dueAmt'=>'required',
         ];
     }
     public function messages()
@@ -35,6 +37,8 @@ class VisitorRequest extends FormRequest
             'location.required' => 'Lead location is required.',
             'phone.required' => 'Lead phone number is required.',
             'status.required' => 'Lead status is required.',
+            'paidAmt.required' => 'Paid Amount is required.',
+            'dueAmt.required' => 'Due amount is required.',
         ];
     }
 }

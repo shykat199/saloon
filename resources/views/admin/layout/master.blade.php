@@ -21,6 +21,7 @@
 
 
     <link href="{{asset('admin/css/waves-effect.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/assets/select2/select2.css')}}" rel="stylesheet">
 
 
     <link href="{{asset('admin/assets/sweet-alert/sweet-alert.min.css')}}" rel="stylesheet">
