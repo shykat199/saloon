@@ -25,11 +25,11 @@
                 </div>
                 <div class="row" style="display: flex; justify-content: space-between;margin-top: 15px;">
                     <div class="mini-stat-info-details text-muted">
-                        <span class="counter">{{$totalDue->total}}</span>
+                        <span class="counter" style="color: red">{{$totalDue->total}}</span>
                         Total Due
                     </div>
                     <div class="mini-stat-info-details text-muted">
-                        <span class="counter">{{$totalPaid->total}}</span>
+                        <span class="counter" style="color: green">{{$totalPaid->total}}</span>
                         Total Paid
                     </div>
                 </div>
