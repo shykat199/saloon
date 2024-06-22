@@ -13,7 +13,6 @@
         font-weight: 600;
         color: #555;
     }
-    }
 </style>
     <div class="row">
         <div class="col-md-6 col-sm-6 col-lg-3">
